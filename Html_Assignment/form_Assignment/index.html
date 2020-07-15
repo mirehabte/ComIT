@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title>
+</head>
+<body>
+    <header>
+     <h1>Create User</h1>
+     <hr>
+    </header>
+    <main class="container">
+     <div>
+      <form method="GET" action="create_user.html">
+        <p>Email:
+            <input type="email" name="email" placeholder="email" required />
+        </p>
+        <p>Username:
+            <input type="text" name="username" placeholder="username" size="30" maxlength="12" />
+        </p>
+        <p>Password:
+            <input type="password" name="password" placeholder="password" size="30" maxlength="8" required />
+        </p>
+        <p>Bio:<br>
+            <textarea name="bio" rows="4" cols="20" placeholder="Give a brief description of this user"></textarea>               
+        </p>
+        <fieldset>
+        <legend>Interests</legend>
+        <p>Select your favourite superhero
+            <input type="radio" name="superhero" value="superman" id="superman" />
+            <label for="superman">Superman</label>
+            <input type="radio" name="superhero" value="batman" id="batman" />
+            <label for="batman">Batman</label>
+            <input type="radio" name="superhero" value="wonder woman" id="wonder woman" checked />
+            <label for="wonder woman">Wonder Woman</label>
+            <input type="radio" name="superhero" value="flash" id="flash" />
+            <label for="flash">Flash</label>
+            <input type="radio" name="superhero" value="thor" id="thor" />
+            <label for="thor">Thor</label>
+            <input type="radio" name="superhero" value="hulk" id="hulk" />
+            <label for="hulk">Hulk</label>          
+        </p>
+        <p>Select your favourite video game
+            <input type="checkbox" name="fifa" value="fifa" id="fifa" checked  />
+            <label for="fifa">Fifa</label>
+            <input type="checkbox" name="nhl" value="nhl" id="nhl" />
+            <label for="nhl">NHL</label>
+            <input type="checkbox" name="resident evil" value="resident evil" id="resident evil" />
+            <label for="resident evil">Resident Evil</label>
+            <input type="checkbox" name="uncharted" value="uncharted" id="uncharted" checked  />
+            <label for="uncharted">Uncharted</label>
+        </p>
+        </fieldset>
+        <input type="hidden" name="userid" value="2300" />
+        <button type="submit" value="create user">Create User</button>
+      </form>
+     </div>     
+    </main>
+</body>
+</html>
+
