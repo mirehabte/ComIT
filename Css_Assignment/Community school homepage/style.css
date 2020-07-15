@@ -1,0 +1,146 @@
+/* General setup */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
+  
+  /* WRITE YOUR CODE BELOW HERE */
+
+  :root {
+    font-size: 10px;
+    box-sizing: border-box;
+  }
+
+  @font-face {
+    font-family: JosefinSans;    
+    src: url(./fonts/JosefinSans-VariableFont_wght.ttf);
+    font-weight: normal;
+  }
+
+  *, ::before, ::after {
+    box-sizing: inherit;
+  }
+
+  body {
+  font-family: JosefinSans;
+  font-size: 1.5rem;
+  line-height: 1.6rem;
+  letter-spacing: 0.1rem;
+  word-spacing: 0.1rem;
+  }
+
+  h1, h2 {
+    font-family: JosefinSans;
+    font-size: 3.2rem;
+  }
+
+  h1 {
+    text-align: center;
+    letter-spacing: 0.4rem;
+  }
+
+  section > p {
+    text-indent: 20px;
+  } 
+  
+  a {
+    text-decoration: underline;    
+  }
+
+  a:visited {
+    color: #07097a;
+  }
+
+  a:hover {
+    color: #781e1e;
+    text-decoration: none;
+  }
+
+  a:focus {
+    color: #301515;
+    outline: none;
+  }
+
+  a:active {
+    color: #2f362e;    
+    font-size: larger;
+  }
+  
+  section > a[:target="_blank"]:after {
+    content: " (external) ";
+  }
+ 
+  section > p > a[href^="https://en.wikipedia.org/wiki/Examination"]:after, a[href^="https://en.wikipedia.org/wiki/Jobs"]:after, a[href^="https://en.wikipedia.org/wiki/Career"]:after, a[href^="https://en.wikipedia.org/wiki/Emotion"]:after {
+    content: url("./images/external.png");        
+  }
+  
+  ul, ol {
+    line-height: 1.6rem;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;        
+  }
+
+  section > ul > li {
+   list-style-type: square;   
+  }
+
+  section > ol > li {
+   list-style-type: lower-latin;
+  }
+  
+  nav > ul {
+    list-style-type: none;    
+  }
+
+  nav > ul > li > a {   
+
+    display: block;
+    padding: 1.2em 0.2em;
+    border: 1px solid #cc6b5a;        
+    color: white;
+    text-decoration: none; 
+    width: 13rem;  
+    height: 5rem;  
+    text-align: center;  
+    margin-top: 2.5rem;  
+  }
+
+  
